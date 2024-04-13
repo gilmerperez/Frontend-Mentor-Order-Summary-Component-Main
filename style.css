@@ -1,0 +1,130 @@
+/* ### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-card {
+    background-color: white;
+    height: 700px;
+    width: 450px;
+    border: none;
+    border-radius: 20px;
+}
+
+.hero {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.main-card h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: hsl(223, 47%, 23%);
+}
+
+.main-card .description {
+    text-align: center;
+    margin-top: 20px;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 10%;
+    height: 90px;
+    width: 80%;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.plan-box svg {
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.plan-box .annual-plan {
+    align-self: center;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.plan-box .annual-plan span {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-box a {
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.plan-box a:hover {
+    color: hsl(245, 68%, 58%);
+}
+
+button {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    color: white;
+    font-family: "Red Hat Display", sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 1px 9px 26px -5px rgba(0,0,0,0.64);
+    border: none;
+}
+
+button:hover {
+    background-color: hsl(245, 68%, 58%);
+}
+
+.main-card .cancel {
+    margin-top: 40px;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main-card .cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
